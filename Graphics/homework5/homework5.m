@@ -5,7 +5,7 @@ Ax = axes('Position',[0.1,0.1,0.8,0.8],'XLim',[0,X_MAX],'YLim',[0,Y_MAX]);
 
 %M = zeros(X_MAX,Y_MAX);
 
-NPOINTS = 10;
+NPOINTS = 5;
 
 try
   [X,Y] = ginput(NPOINTS);
@@ -54,9 +54,10 @@ colLine = [1,0,0];
 
 
 
-xf = [X(1):0.1:X(NPOINTS)];
+xf = [X(1):1:X(NPOINTS)];
 
-spl = interp1 (X, Y,xf ,"spline");
+#spl = interp1 (X, Y,xf ,"spline");
+spl = spline (X, Y, xf);
 
 hold on;
 plot(spl,"b");
@@ -112,9 +113,10 @@ color = 2;
 %  end
 %end
 
-xf = [X(1):0.1:X(NPOINTS)];
+xf = [X(1):1:X(NPOINTS)];
 
-spl = interp1 (X, Y,xf ,"spline");
+# spl = interp1 (X, Y,xf ,"spline");
+spl = spline (X, Y,xf);
 
 hold on;
 plot(spl,"b");
