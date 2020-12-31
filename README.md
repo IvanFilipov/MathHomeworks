@@ -1,7 +1,12 @@
 # MathHomeworks
-some code related to mathematical courses Computer Graphics and 
-numerical methods for solving differential equations
-at FMI 2017
+Some code related to mathematical courses:
+- Computer Graphics 
+- Numerical methods for solving differential equations
+- Statistics
 
-the code is written in Octave ( GNU free vesrsion of MATLab),
-so all the code should be fully compatibale with MATLab
+@ FMI 2017-2018
+
+The code is written in Octave (GNU free vesrsion of MATLab),
+so it should be fully compatibale with MATLab.
+
+Statistics examples are implemented in R.
